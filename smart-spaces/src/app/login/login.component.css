@@ -1,0 +1,92 @@
+.wrapper {
+    padding: 12% 0;
+    background: -webkit-linear-gradient(to bottom, #c27752, #2b1418);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #c27751, #2b1418);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+input[type="checkbox"] {
+    width: 19px;
+    /*Desired width*/
+    height: 19px;
+    /*Desired height*/
+}
+
+
+hr {
+    background-color: white;
+    opacity: 0;
+}
+/* button{
+    text-align: center;
+} */
+#labels {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+.banner-sec {
+    background: url("../../assets/books.jpeg") no-repeat left bottom;
+    background-size: cover;
+    border-radius: 0 10px 10px 0;
+    padding: 0;
+}
+
+.container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 15px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.login-sec {
+    padding: 50px 30px;
+    position: relative;
+}
+
+.login-sec .copy-text {
+    position: absolute;
+    width: 80%;
+    bottom: 20px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.login-sec .copy-text i {
+    color: rgb(233, 12, 12);
+}
+
+.login-sec .copy-text a {
+    color: red;
+}
+
+.login-sec h2 {
+    margin-bottom: 30px;
+    font-weight: 800;
+    font-size: 30px;
+    color: maroon;
+}
+
+.login-sec h2:after {
+    content: " ";
+    width: 100px;
+    height: 5px;
+    background: rgb(129, 21, 28);
+    display: block;
+    margin-top: 20px;
+    border-radius: 3px;
+    margin-left: auto;
+    margin-right: auto
+}
+.wrapper1{
+    text-align: center
+}
+
+.btn-login {
+    background: rgb(117, 22, 22);
+    color: #fff;
+    font-weight: 600;
+    
+}

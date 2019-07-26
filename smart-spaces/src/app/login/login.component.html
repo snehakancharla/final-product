@@ -1,0 +1,49 @@
+0
+<app-shennav> </app-shennav>
+
+
+<div class="wrapper">
+
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4 login-sec">
+                <h2 class="text-center">
+                    Login Now
+                </h2>
+                <form class="login-form">
+                    <div class="form-group">
+                        <label for="inputEmail" id="labels">Emailid</label>
+                        <input type="text" #inputEmail class="form-control" placeholder="">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword" id="labels">Password</label>
+                        <input type="password" #inputPassword class="form-control" placeholder="">
+                    </div>
+                    <div class="wrapper1">
+                        <button type="button" class="btn btn-login center-block" (click)="login(inputEmail.value,inputPassword.value)">Submit 
+                                    </button>
+
+                        <br>
+                        <hr>
+
+
+                    </div>
+
+                </form>
+
+
+                <div class="copy-text">
+                    <hr> Created with <i class="fa fa-heart"></i> by SmartSpace Team</div>
+            </div>
+
+            <div class="col-md-8 banner-sec">
+
+            </div>
+        </div>
+    </div>
+
+
+</div>

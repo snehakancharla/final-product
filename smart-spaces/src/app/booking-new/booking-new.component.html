@@ -1,0 +1,63 @@
+<app-shennav-user> </app-shennav-user>
+<br>
+<br>
+<br>
+<br>
+<div class="container-fluid">
+    <div class="container">
+        <form [formGroup]="myGroup" >
+
+            
+           
+            <mat-form-field id="booking">
+                <textarea matInput placeholder="Warehouse Id" formControlName="wid" readonly></textarea>
+            </mat-form-field>
+
+            <mat-form-field id="booking">
+                <textarea matInput placeholder="Warehouse Name" formControlName="wname" value="{{wname}}" readonly></textarea>
+            </mat-form-field>
+
+
+            <mat-form-field id="booking">
+                <textarea matInput placeholder="Partition Number" formControlName="partitionNo" value="{{pid}}" readonly></textarea>
+            </mat-form-field>
+
+
+           
+            <mat-form-field id="booking">
+                <textarea matInput placeholder="Owner Mail" formControlName="ownerMail" value="{{ownerMail}}" readonly></textarea>
+            </mat-form-field>
+
+
+            <mat-form-field id="booking">
+                <textarea matInput placeholder="Partition Squarefeet" formControlName="sqft" value="{{sqft}}" readonly></textarea>
+            </mat-form-field>
+
+
+            <mat-form-field id="booking">
+                <textarea matInput placeholder="Partition cost" formControlName="cost" value="{{cost}}" readonly></textarea>
+            </mat-form-field>
+            <br>
+
+ 
+            <mat-form-field class="date" id="booking">
+                <input matInput [matDatepicker]="picker" placeholder="Start Date" #val1 disabled>
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker startView="year" [startAt]="startDate"></mat-datepicker>
+                <mat-datepicker #picker disabled="false"></mat-datepicker>
+            </mat-form-field> 
+
+            <mat-form-field class="date" id="booking">
+                <input matInput [matDatepicker]="picker1" placeholder="EndDate" #val2 disabled>
+                <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                <mat-datepicker #picker1 startView="year" [startAt]="startDate"></mat-datepicker>
+                <mat-datepicker #picker1 disabled="false"></mat-datepicker>
+            </mat-form-field>
+            
+
+            <div class="button1">
+                <button type="button" class="btn btn-success btn-lg" (click)="BookNow(val1.value,val2.value)">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>

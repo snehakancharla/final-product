@@ -1,0 +1,14 @@
+.white {
+    color: white;
+}
+
+.navbar-default {
+    background-color: maroon;
+}
+
+.values {
+    margin: 0;
+    width: 287px;
+    text-align: left;
+    /* font-size: 22px; */
+}
